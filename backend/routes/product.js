@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const userMiddleware = require('../middlewares/user')
 const jwt = require("jsonwebtoken");
 const innovativeProd = require("../models/innovativeProdModel");
-const Stripe = require("stripe")("sk_test_51OduLoSEuj58CJVxfj0JxednavltZr3C59KJx9Ik6b9ZhHw6AmMigGRBri6vNvJkvOp1GGaT0ZUElG21zUdPQer6005hR0RkBD")
+const Stripe = require("stripe")("")
 
 
 require("dotenv").config();
