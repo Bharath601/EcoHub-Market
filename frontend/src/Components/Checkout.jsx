@@ -41,7 +41,7 @@ const makePayment = async () => {
     if (totalPrice === 0) {
      return  alert("Please add products to the cart before making a payment.");
     }
-    const stripe = await loadStripe("pk_test_51OduLoSEuj58CJVx7U4snk3y0yi7VrFLNTiWyvRbKfMqvcvOkRJ1dN5v265uHqLYMUQ9tE633lbn635Qki4LK6mz00v2ePwhFP");
+    const stripe = await loadStripe("");
     console.log(products);
     const result =  axios.delete("http://localhost:5001/clearCart",  {
       withCredentials: true // Include credentials in the request
